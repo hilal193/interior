@@ -16,7 +16,7 @@ class FrontController extends Controller
     }
     public function blogHome()
     {
-       return view("pages.blog-home");
+       return view("pages.bloghome");
     }
     public function elements()
     {
@@ -24,9 +24,9 @@ class FrontController extends Controller
     }
     public function projetDetails()
     {
-       return view("pages.project-details");
+       return view("pages.projectdetails");
     }
-    public function projets()
+    public function projects()
     {
         return view("pages.projects");
     }
