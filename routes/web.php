@@ -15,16 +15,20 @@ use App\Http\Controllers\FrontController;
 */
 
 // Route::get('/', function () {
-//     return view('home');
+//     return view('welcome');
 // });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-// pages
-Route::get('/', [FrontController::class,"Home"])->name('home');
-Route::get('/pages/blogHome', [FrontController::class,"blogHome"])->name('blogHome');
-Route::get('/pages/contact', [FrontController::class,"contact"])->name('contact');
-Route::get('/pages/elements', [FrontController::class,"elements"])->name('elements');
-Route::get('/pages/projectdetails', [FrontController::class,"projectDetails"])->name('projectDetails');
-Route::get('/pages/projects', [FrontController::class,"projects"])->name('projects');
-Route::get('/pages/services', [FrontController::class,"services"])->name('services');
+require __DIR__.'/auth.php';
 
+
+Route::get('/', [FrontController::class,"home"])->name('home');
+Route::get('/pages/BlogHome', [FrontController::class,"blogHome"])->name('blogHome');
+Route::get('/pages/Contact', [FrontController::class,"contact"])->name('contact');
+Route::get('/pages/Elements', [FrontController::class,"elements"])->name('elements');
+Route::get('/pages/ProjectDetails', [FrontController::class,"projectDetails"])->name('projectDetails');
+Route::get('/pages/Projects', [FrontController::class,"projects"])->name('projects');
+Route::get('/pages/Services', [FrontController::class,"services"])->name('services');

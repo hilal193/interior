@@ -14,6 +14,7 @@
                     <li><a href={{ route("projects") }}>Projects</a></li>
                     <li><a href={{ route("blogHome") }}>Blog</a></li>
                     <li><a href={{ route("contact") }}>Contact</a></li>
+                    @include('partials.navAuth')
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
