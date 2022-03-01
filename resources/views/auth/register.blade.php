@@ -19,11 +19,32 @@
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
+              <!-- Prenom -->
+              <div>
+                <x-label for="prenom" :value="__('Prenom')" />
+
+                <x-input id="prenom" class="block mt-1 w-full" type="text" name="prenom" :value="old('prenom')" required autofocus />
+            </div>
+
+              <!-- psaudonyme -->
+              <div>
+                <x-label for="psaudonyme" :value="__('Psaudonym')" />
+
+                <x-input id="psaudonyme" class="block mt-1 w-full" type="text" name="psaudonyme" :value="old('psaudonyme')" required autofocus />
+            </div>
+
             <!-- Email Address -->
             <div class="mt-4">
                 <x-label for="email" :value="__('Email')" />
 
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            </div>
+
+              <!-- Age -->
+              <div class="mt-4">
+                <x-label for="age" :value="__('Age')" />
+
+                <x-input id="age" class="block mt-1 w-full" type="number" name="age" :value="old('age')" required />
             </div>
 
             <!-- Password -->
