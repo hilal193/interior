@@ -15,6 +15,8 @@
     <meta charset="UTF-8">
     <!-- Site Title -->
     <title>Interior</title>
+    {{-- mon css --}}
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <link href={{ asset("https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700") }} rel="stylesheet">
         <!--
@@ -30,19 +32,20 @@
         <link rel="stylesheet" href={{ asset("css/main.css") }}>
     </head>
     <body>
+        @yield('content')
           <header id="header" id="home">
             <div class="container main-menu">
                 <div class="row align-items-center justify-content-between d-flex">
                   <div id="logo">
-                    <a href={{ asset("index.html") }}><img src={{ asset("img/logo.png") }} alt="" title="" /></a>
+                    <a href={{ route("home") }}><img src={{ asset("img/logo.png") }} alt="" title="" /></a>
                   </div>
                   <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                      <li class="menu-active"><a href={{ asset("index.html") }}>Home</a></li>
-                      <li><a href={{ asset("services.html") }}>Services</a></li>
-                      <li><a href={{ asset("projects.html") }}>Projects</a></li>
-                      <li><a href={{ asset("blog-home.html") }}>Blog</a></li>
-                      <li><a href={{ asset("contact.html") }}>Contact</a></li>
+                      <li class="menu-active"><a href={{ route("home") }}>Home</a></li>
+                      <li><a href={{ route("services") }}>Services</a></li>
+                      <li><a href={{ route("projects") }}>Projects</a></li>
+                      <li><a href={{ route("blogHome") }}>Blog</a></li>
+                      <li><a href={{ route("contact") }}>Contact</a></li>
                     </ul>
                   </nav><!-- #nav-menu-container -->
                 </div>
@@ -121,7 +124,7 @@
                                        <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g1.jpg") }} alt="">
                                   <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                                    <a href={{ asset("project-details.html") }} class="primary-btn text-uppercase mt-20">More Details</a>
+                                    <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More Details</a>
                                   </div>
                                 </a>
                             </div>
@@ -135,7 +138,7 @@
                                        <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g2.jpg") }} alt="">
                                   <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title mx-auto">Ambient interior</h3>
-                                    <a href={{ asset("project-details.html") }} class="primary-btn text-uppercase mt-20">More Details</a>
+                                    <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More Details</a>
                                   </div>
                                 </a>
                             </div>
@@ -149,7 +152,7 @@
                                        <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g3.jpg") }} alt="">
                                   <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title mx-auto">Ambient interior</h3>
-                                    <a href={{ asset("project-details.html") }} class="primary-btn text-uppercase mt-20">More Details</a>
+                                    <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More Details</a>
                                   </div>
                                 </a>
                             </div>
@@ -163,7 +166,7 @@
                                        <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g4.jpg") }} alt="">
                                   <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                                    <a href={{ asset("project-details.html") }} class="primary-btn text-uppercase mt-20">More Details</a>
+                                    <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More Details</a>
                                   </div>
                                 </a>
                             </div>
@@ -418,8 +421,8 @@
                                 If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that.
                             </p>
                             <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href={{ asset("https://colorlib.com" ) }}target="_blank">Colorlib</a> and distributed by <a href={{ asset("https://themewagon.com/") }} target="_blank">ThemeWagon</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href={{ asset("https://colorlib.com" ) }}target="_blank">Colorlib</a> and distributed by <a href={{ asset("https://themewagon.com/") }} target="_blank">ThemeWagon</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div>
                     </div>
                     <div class="col-lg-5  col-md-6 col-sm-6">
