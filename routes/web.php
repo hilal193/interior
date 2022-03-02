@@ -26,6 +26,27 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+// route par page admin
+Route::get('/dashboard/blog', function () {
+    return view('admin.blog.index');
+})->middleware(['auth'])->name('blog.index');
+
+Route::get('/dashboard/contact', function () {
+    return view('admin.contact.index');
+})->middleware(['auth'])->name('contact.index');
+
+Route::get('/dashboard/projets', function () {
+    return view('admin.projets.index');
+})->middleware(['auth'])->name('projets.index');
+
+Route::get('/dashboard/projetshow', function () {
+    return view('admin.projetshow.index');
+})->middleware(['auth'])->name('projetshow.index');
+
+Route::get('/dashboard/services', function () {
+    return view('admin.services.index');
+})->middleware(['auth'])->name('services.index');
+
 require __DIR__.'/auth.php';
 
 
