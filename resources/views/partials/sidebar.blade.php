@@ -5,6 +5,7 @@
                 <div class="logo">
                     <a href="index.html"><img src={{ asset("assets/images/logo/logo.png") }} alt="Logo" srcset=""></a>
                 </div>
+
                 <div class="toggler">
                     <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
                 </div>
@@ -12,6 +13,9 @@
         </div>
         <div class="sidebar-menu">
             <ul class="menu">
+                {{-- <li class="sidebar-title">Bonjour</li>
+                <li class="sidebar-title">nom : {{ Auth::user()->name}}</li>
+                <li class="sidebar-title">prenom : {{ Auth::user()->prenom}}</li> --}}
                 <li class="sidebar-title">Menu</li>
 
                 <li class="sidebar-item {{ Request::is('dashboard') ? 'active' : ''; }} ">
