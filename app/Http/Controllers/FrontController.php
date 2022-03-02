@@ -34,4 +34,9 @@ class FrontController extends Controller
     {
         return view("pages.services");
     }
+
+    public function admin()
+    {
+        return view("admin.dashboard");
+    }
 }
