@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Offre;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -32,7 +34,9 @@ class FrontController extends Controller
     }
     public function services()
     {
-        return view("pages.services");
+        $serviceTout = Service::all();
+        $offreTout = Offre::all();
+        return view("pages.services",compact("serviceTout","offreTout"));
     }
 
     public function admin()

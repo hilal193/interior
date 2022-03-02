@@ -27,7 +27,7 @@
                         <div class="overlay overlay-bg"></div>
                         <a href="#" target="_blank">
                             <div class="thumb">
-                                <img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget1.jpg"
+                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/blog/cat-widget1.jpg") }}
                                     alt="">
                             </div>
                             <div class="content-details">
@@ -45,7 +45,7 @@
                         <div class="overlay overlay-bg"></div>
                         <a href="#" target="_blank">
                             <div class="thumb">
-                                <img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget2.jpg"
+                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/blog/cat-widget2.jpg") }}
                                     alt="">
                             </div>
                             <div class="content-details">
@@ -63,7 +63,7 @@
                         <div class="overlay overlay-bg"></div>
                         <a href="#" target="_blank">
                             <div class="thumb">
-                                <img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget3.jpg"
+                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/blog/cat-widget3.jpg") }}
                                     alt="">
                             </div>
                             <div class="content-details">
@@ -106,7 +106,7 @@
                     </div>
                     <div class="col-lg-9 col-md-9 ">
                         <div class="feature-img">
-                            <img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+                            <img class="img-fluid" src={{ asset("img/blog/feature-img1.jpg") }} alt="">
                         </div>
                         <a class="posts-title" href="blog-single.html">
                             <h3>Astronomy Binoculars A Great Alternative</h3>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-lg-9 col-md-9 ">
                         <div class="feature-img">
-                            <img class="img-fluid" src="img/blog/feature-img2.jpg" alt="">
+                            <img class="img-fluid" src={{ asset("img/blog/feature-img2.jpg") }} alt="">
                         </div>
                         <a class="posts-title" href="blog-single.html">
                             <h3>The Basics Of Buying A Telescope</h3>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="col-lg-9 col-md-9">
                         <div class="feature-img">
-                            <img class="img-fluid" src="img/blog/feature-img3.jpg" alt="">
+                            <img class="img-fluid" src={{ asset("img/blog/feature-img3.jpg") }} alt="">
                         </div>
                         <a class="posts-title" href="blog-single.html">
                             <h3>The Glossary Of Telescopes</h3>
@@ -204,7 +204,7 @@
                     </div>
                     <div class="col-lg-9 col-md-9">
                         <div class="feature-img">
-                            <img class="img-fluid" src="img/blog/feature-img4.jpg" alt="">
+                            <img class="img-fluid" src={{ asset("img/blog/feature-img4.jpg") }} alt="">
                         </div>
                         <a class="posts-title" href="blog-single.html">
                             <h3>The Night Sky</h3>
@@ -238,7 +238,7 @@
                     </div>
                     <div class="col-lg-9 col-md-9">
                         <div class="feature-img">
-                            <img class="img-fluid" src="img/blog/feature-img5.jpg" alt="">
+                            <img class="img-fluid" src={{ asset("img/blog/feature-img5.jpg") }} alt="">
                         </div>
                         <a class="posts-title" href="blog-single.html">
                             <h3>Telescopes 101</h3>
