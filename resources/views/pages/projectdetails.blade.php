@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 project-details-left">
-                <img class="img-fluid" src="img/project-details.jpg" alt="">
+                <img class="img-fluid" src={{ asset("img/project-details.jpg") }} alt="">
             </div>
             <div class="col-lg-6 project-details-right">
                 <h3 class="pb-20">Lavendar ambient interior</h3>
@@ -70,19 +70,19 @@
         <div class="brand-wrap">
             <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
                 <div class="col single-brand">
-                    <a href="#"><img class="mx-auto" src="img/l1.png" alt=""></a>
+                    <a href="#"><img class="mx-auto" src={{ asset("img/l1.png") }} alt=""></a>
                 </div>
                 <div class="col single-brand">
-                    <a href="#"><img class="mx-auto" src="img/l2.png" alt=""></a>
+                    <a href="#"><img class="mx-auto" src={{ asset("img/l2.png") }} alt=""></a>
                 </div>
                 <div class="col single-brand">
-                    <a href="#"><img class="mx-auto" src="img/l3.png" alt=""></a>
+                    <a href="#"><img class="mx-auto" src={{ asset("img/l3.png") }} alt=""></a>
                 </div>
                 <div class="col single-brand">
-                    <a href="#"><img class="mx-auto" src="img/l4.png" alt=""></a>
+                    <a href="#"><img class="mx-auto" src={{ asset("img/l4.png") }} alt=""></a>
                 </div>
                 <div class="col single-brand">
-                    <a href="#"><img class="mx-auto" src="img/l5.png" alt=""></a>
+                    <a href="#"><img class="mx-auto" src={{ asset("img/l5.png") }} alt=""></a>
                 </div>
             </div>
         </div>

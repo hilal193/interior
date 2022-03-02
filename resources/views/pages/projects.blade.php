@@ -11,8 +11,8 @@
                 <h1 class="text-white">
                     Projects
                 </h1>
-                <p class="text-white link-nav"><a href="index.html">Home </a> <span
-                        class="lnr lnr-arrow-right"></span> <a href="projects.html"> Projects</a></p>
+                <p class="text-white link-nav"><a href={{ route("home") }}>Home </a> <span
+                        class="lnr lnr-arrow-right"></span> <a href={{ route("projects") }}> Projects</a></p>
             </div>
         </div>
     </div>
@@ -33,10 +33,10 @@
                     <div class="content">
                         <a href="#" target="_blank">
                             <div class="content-overlay"></div>
-                            <img class="content-image img-fluid d-block mx-auto" src="img/g1.jpg" alt="">
+                            <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g1.jpg" )}} alt="">
                             <div class="content-details fadeIn-bottom">
                                 <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More
+                                <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More
                                     Details</a>
                             </div>
                         </a>
@@ -48,10 +48,10 @@
                     <div class="content">
                         <a href="#" target="_blank">
                             <div class="content-overlay"></div>
-                            <img class="content-image img-fluid d-block mx-auto" src="img/g2.jpg" alt="">
+                            <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g2.jpg") }} alt="">
                             <div class="content-details fadeIn-bottom">
                                 <h3 class="content-title mx-auto">Ambient interior</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More
+                                <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More
                                     Details</a>
                             </div>
                         </a>
@@ -63,10 +63,10 @@
                     <div class="content">
                         <a href="#" target="_blank">
                             <div class="content-overlay"></div>
-                            <img class="content-image img-fluid d-block mx-auto" src="img/g3.jpg" alt="">
+                            <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g3.jpg")}} alt="">
                             <div class="content-details fadeIn-bottom">
                                 <h3 class="content-title mx-auto">Ambient interior</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More
+                                <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More
                                     Details</a>
                             </div>
                         </a>
@@ -78,10 +78,10 @@
                     <div class="content">
                         <a href="#" target="_blank">
                             <div class="content-overlay"></div>
-                            <img class="content-image img-fluid d-block mx-auto" src="img/g4.jpg" alt="">
+                            <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g4.jpg") }} alt="">
                             <div class="content-details fadeIn-bottom">
                                 <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More
+                                <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More
                                     Details</a>
                             </div>
                         </a>

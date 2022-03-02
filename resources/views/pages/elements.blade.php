@@ -148,7 +148,7 @@
             <h3 class="mb-30">Left Aligned</h3>
             <div class="row">
                 <div class="col-md-3">
-                    <img src="img/elements/d.jpg" alt="" class="img-fluid">
+                    <img src={{ asset("img/elements/d.jpg") }} alt="" class="img-fluid">
                 </div>
                 <div class="col-md-9 mt-sm-20 left-align-p">
                     <p>Recently, the US Federal government banned online casinos from operating in America by making
@@ -245,7 +245,7 @@
                     </div>
                     <div class="table-row">
                         <div class="serial">01</div>
-                        <div class="country"> <img src="img/elements/f1.jpg" alt="flag">Canada</div>
+                        <div class="country"> <img src={{ asset("img/elements/f1.jpg") }} alt="flag">Canada</div>
                         <div class="visit">645032</div>
                         <div class="percentage">
                             <div class="progress">
@@ -256,7 +256,7 @@
                     </div>
                     <div class="table-row">
                         <div class="serial">02</div>
-                        <div class="country"> <img src="img/elements/f2.jpg" alt="flag">Canada</div>
+                        <div class="country"> <img src={{ asset("img/elements/f2.jpg") }} alt="flag">Canada</div>
                         <div class="visit">645032</div>
                         <div class="percentage">
                             <div class="progress">
@@ -267,7 +267,7 @@
                     </div>
                     <div class="table-row">
                         <div class="serial">03</div>
-                        <div class="country"> <img src="img/elements/f3.jpg" alt="flag">Canada</div>
+                        <div class="country"> <img src={{ asset("img/elements/f3.jpg") }} alt="flag">Canada</div>
                         <div class="visit">645032</div>
                         <div class="percentage">
                             <div class="progress">
@@ -278,7 +278,7 @@
                     </div>
                     <div class="table-row">
                         <div class="serial">04</div>
-                        <div class="country"> <img src="img/elements/f4.jpg" alt="flag">Canada</div>
+                        <div class="country"> <img src={{ asset("img/elements/f4.jpg") }} alt="flag">Canada</div>
                         <div class="visit">645032</div>
                         <div class="percentage">
                             <div class="progress">
@@ -289,7 +289,7 @@
                     </div>
                     <div class="table-row">
                         <div class="serial">05</div>
-                        <div class="country"> <img src="img/elements/f5.jpg" alt="flag">Canada</div>
+                        <div class="country"> <img src={{ asset("img/elements/f5.jpg") }} alt="flag">Canada</div>
                         <div class="visit">645032</div>
                         <div class="percentage">
                             <div class="progress">
@@ -300,7 +300,7 @@
                     </div>
                     <div class="table-row">
                         <div class="serial">06</div>
-                        <div class="country"> <img src="img/elements/f6.jpg" alt="flag">Canada</div>
+                        <div class="country"> <img src={{ asset("img/elements/f6.jpg") }} alt="flag">Canada</div>
                         <div class="visit">645032</div>
                         <div class="percentage">
                             <div class="progress">
@@ -311,7 +311,7 @@
                     </div>
                     <div class="table-row">
                         <div class="serial">07</div>
-                        <div class="country"> <img src="img/elements/f7.jpg" alt="flag">Canada</div>
+                        <div class="country"> <img src={{ asset("img/elements/f7.jpg") }} alt="flag">Canada</div>
                         <div class="visit">645032</div>
                         <div class="percentage">
                             <div class="progress">
@@ -322,7 +322,7 @@
                     </div>
                     <div class="table-row">
                         <div class="serial">08</div>
-                        <div class="country"> <img src="img/elements/f8.jpg" alt="flag">Canada</div>
+                        <div class="country"> <img src={{ asset("img/elements/f8.jpg") }} alt="flag">Canada</div>
                         <div class="visit">645032</div>
                         <div class="percentage">
                             <div class="progress">
