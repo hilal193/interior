@@ -22,14 +22,20 @@
 <section class="project-details-area section-gap">
     <div class="container">
         <div class="row align-items-center">
+            @foreach ($projetTout as $item)
             <div class="col-lg-6 project-details-left">
-                <img class="img-fluid" src={{ asset("img/project-details.jpg") }} alt="">
+                {{-- <img class="img-fluid" src={{ asset("img/project-details.jpg") }} alt=""> --}}
+                <img class="img-fluid" src={{ asset('img/'. $item->url) }} alt="">
             </div>
             <div class="col-lg-6 project-details-right">
-                <h3 class="pb-20">Lavendar ambient interior</h3>
+                {{-- <h3 class="pb-20">Lavendar ambient interior</h3> --}}
+                <h3 class="pb-20">{{ $item->titre }}</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...
+                    {{-- {{ str_limit($item->nextPost()['titre'], 10) }} --}}
+
+                    Petite description : {{ Str::limit($item->description, 50) }}
+                    {{-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation... --}}
                 </p>
                 <div class="details-info d-flex flex-row">
                     <ul class="names">
@@ -37,13 +43,13 @@
                         <li>Date added </li>
                     </ul>
                     <ul class="desc">
-                        <li>: Envato</li>
-                        <li>: 17 Aug 2020</li>
+                        <li>: {{ $item->auteur }}</li>
+                        <li>: {{ $item->dateCreate }}</li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-12 project-desc mt-60">
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
@@ -57,8 +63,11 @@
                     consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
                     qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                </p>
+                </p> --}}
+                <p>{{ $item->description }}</p>
             </div>
+
+            @endforeach
         </div>
     </div>
 </section>

@@ -18,6 +18,10 @@ class CreateProjetsTable extends Migration
             $table->string("url");
             // $table->string("nom");
             $table->string("titre");
+            $table->string("auteur");
+            $table->date('dateCreate');
+            $table->longText("description");
+
             $table->timestamps();
         });
     }

@@ -27,7 +27,8 @@ class FrontController extends Controller
     }
     public function projetDetails()
     {
-       return view("pages.projectdetails");
+        $projetTout = Projet::all();
+       return view("pages.projectdetails",compact("projetTout"));
     }
     public function projects()
     {
