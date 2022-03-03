@@ -41,7 +41,7 @@
                             <div class="content-details fadeIn-bottom">
                                 {{-- <h3 class="content-title mx-auto">Lavendar ambient interior</h3> --}}
                                 <h3 class="content-title mx-auto">{{ $item->titre }}</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More
+                                <a href={{ route("projectDetails",$item->id) }} class="primary-btn text-uppercase mt-20">More
                                     Details</a>
                             </div>
                         </a>
@@ -60,7 +60,7 @@
                             <div class="content-details fadeIn-bottom">
                                 {{-- <h3 class="content-title mx-auto">Ambient interior</h3> --}}
                                 <h3 class="content-title mx-auto">{{ $item->titre }}</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More
+                                <a href={{ route("projectDetails",$item->id) }} class="primary-btn text-uppercase mt-20">More
                                     Details</a>
                             </div>
                         </a>
@@ -71,7 +71,7 @@
             @empty
             <p>rien ne se passe</p>
             @endforelse
-          
+
         </div>
     </div>
 </section>

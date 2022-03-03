@@ -24,37 +24,43 @@
     <div class="container">
         <div class="row">
             <div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
+            @foreach ($contactTout as $item)
             <div class="col-lg-4 d-flex flex-column address-wrap">
                 <div class="single-contact-address d-flex flex-row">
                     <div class="icon">
-                        <span class="lnr lnr-home"></span>
+                        {{-- <span class="lnr lnr-home"></span> --}}
+                        <span class="{{ $item->logoAdresse }}"></span>
                     </div>
                     <div class="contact-details">
-                        <h5>Binghamton, New York</h5>
+                        <h5>{{ $item->nomAdresse }}</h5>
                         <p>
-                            4343 Hinkle Deegan Lake Road
+                            {{ $item->rueAdresse }}
                         </p>
                     </div>
                 </div>
                 <div class="single-contact-address d-flex flex-row">
                     <div class="icon">
-                        <span class="lnr lnr-phone-handset"></span>
+                        <span class="{{ $item->logoPhone }}"></span>
                     </div>
                     <div class="contact-details">
-                        <h5>00 (958) 9865 562</h5>
-                        <p>Mon to Fri 9am to 6 pm</p>
+                        <h5>{{ $item->numero }}</h5>
+                        <p>{{ $item->dispo }}</p>
                     </div>
                 </div>
                 <div class="single-contact-address d-flex flex-row">
                     <div class="icon">
-                        <span class="lnr lnr-envelope"></span>
+                        <span class="{{ $item->logoMail }}"></span>
                     </div>
                     <div class="contact-details">
-                        <h5>support@colorlib.com</h5>
-                        <p>Send us your query anytime!</p>
+                        <h5>{{ $item->email }}</h5>
+                        <p>{{ $item->emailDescrip }}</p>
                     </div>
                 </div>
             </div>
+
+            @endforeach
+
+
             <div class="col-lg-8">
                 <form class="form-area " method="post" class="contact-form text-right">
                     <div class="row">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Offre;
 use App\Models\Projet;
+use App\Models\Contact;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class FrontController extends Controller
     }
     public function contact()
     {
-        return view('pages.contact');
+        $contactTout = Contact::all();
+        return view('pages.contact',compact("contactTout"));
     }
     public function blogHome()
     {
@@ -25,10 +27,12 @@ class FrontController extends Controller
     {
         return view("pages.elements");
     }
-    public function projetDetails()
+    public function projetDetails($id)
     {
-        $projetTout = Projet::all();
-       return view("pages.projectdetails",compact("projetTout"));
+
+        $projetTout = Projet::find($id);
+        // dd($projetTout);
+        return view("pages.projectdetails",compact("projetTout"));
     }
     public function projects()
     {

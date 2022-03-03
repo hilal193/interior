@@ -22,18 +22,18 @@
 <section class="project-details-area section-gap">
     <div class="container">
         <div class="row align-items-center">
-            @foreach ($projetTout as $item)
+            {{-- @foreach ($projetTout as $item) --}}
             <div class="col-lg-6 project-details-left">
                 {{-- <img class="img-fluid" src={{ asset("img/project-details.jpg") }} alt=""> --}}
-                <img class="img-fluid" src={{ asset('img/'. $item->url) }} alt="">
+                <img class="img-fluid" src={{ asset('img/'. $projetTout->url) }} alt="">
             </div>
             <div class="col-lg-6 project-details-right">
                 {{-- <h3 class="pb-20">Lavendar ambient interior</h3> --}}
-                <h3 class="pb-20">{{ $item->titre }}</h3>
+                <h3 class="pb-20">{{ $projetTout->titre }}</h3>
                 <p>
-                    {{-- {{ str_limit($item->nextPost()['titre'], 10) }} --}}
+                    {{-- {{ str_limit($projetTout->nextPost()['titre'], 10) }} --}}
 
-                    Petite description : {{ Str::limit($item->description, 50) }}
+                    Petite description : {{ Str::limit($projetTout->description, 50) }}
                     {{-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation... --}}
                 </p>
@@ -43,8 +43,8 @@
                         <li>Date added </li>
                     </ul>
                     <ul class="desc">
-                        <li>: {{ $item->auteur }}</li>
-                        <li>: {{ $item->dateCreate }}</li>
+                        <li>: {{ $projetTout->auteur }}</li>
+                        <li>: {{ $projetTout->dateCreate }}</li>
                     </ul>
                 </div>
             </div>
@@ -64,10 +64,10 @@
                     qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                 </p> --}}
-                <p>{{ $item->description }}</p>
+                <p>{{ $projetTout->description }}</p>
             </div>
 
-            @endforeach
+            {{-- @endforeach --}}
         </div>
     </div>
 </section>

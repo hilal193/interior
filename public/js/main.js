@@ -10,7 +10,7 @@ $(document).ready(function() {
     $(".fullscreen").css("height", window_height)
     $(".fitscreen").css("height", fitscreen);
 
-    //------- Niceselect  js --------//  
+    //------- Niceselect  js --------//
 
     if (document.getElementById("default-select")) {
         $('select').niceSelect();
@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('select').niceSelect();
     };
 
-    //------- Lightbox  js --------//  
+    //------- Lightbox  js --------//
 
     $('.img-gal').magnificPopup({
         type: 'image',
@@ -36,7 +36,7 @@ $(document).ready(function() {
         fixedContentPos: false
     });
 
-    //------- Superfist nav menu  js --------//  
+    //------- Superfist nav menu  js --------//
 
     $('.nav-menu').superfish({
         animation: {
@@ -45,7 +45,7 @@ $(document).ready(function() {
         speed: 400
     });
 
-    //------- Mobile Nav  js --------//  
+    //------- Mobile Nav  js --------//
 
     if ($('#nav-menu-container').length) {
         var $mobile_nav = $('#nav-menu-container').clone().prop({
@@ -86,7 +86,7 @@ $(document).ready(function() {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
 
-    //------- Smooth Scroll  js --------//  
+    //------- Smooth Scroll  js --------//
 
     $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -147,7 +147,7 @@ $(document).ready(function() {
 
     });
 
-    //------- Header Scroll Class  js --------//  
+    //------- Header Scroll Class  js --------//
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
@@ -157,7 +157,7 @@ $(document).ready(function() {
         }
     });
 
-    //------- Owl Carusel  js --------//  
+    //------- Owl Carusel  js --------//
 
     $('.active-testimonial-carusel').owlCarousel({
         items: 2,
@@ -186,8 +186,8 @@ $(document).ready(function() {
         loop: true,
         margin: 30,
         dots: true,
-        autoplayHoverPause: true, 
-        smartSpeed:500,               
+        autoplayHoverPause: true,
+        smartSpeed:500,
         autoplay: true,
         responsive: {
             0: {
@@ -209,7 +209,7 @@ $(document).ready(function() {
         items: 5,
         loop: true,
         autoplayHoverPause: true,
-        smartSpeed:500,        
+        smartSpeed:500,
         autoplay: true,
         responsive: {
             0: {
@@ -227,7 +227,7 @@ $(document).ready(function() {
         }
     });
 
-    //------- Timer Countdown  js --------//  
+    //------- Timer Countdown  js --------//
 
     if (document.getElementById("count")) {
 
@@ -262,15 +262,15 @@ $(document).ready(function() {
 
     }
 
-    //------- Google Map  js --------//  
+    //------- Google Map  js --------//
 
     if (document.getElementById("map")) {
         google.maps.event.addDomListener(window, 'load', init);
 
         function init() {
             var mapOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                zoom: 15,
+                center: new google.maps.LatLng(50.855545520427604, 4.341250284033105), // New York
                 styles: [{
                     "featureType": "water",
                     "elementType": "geometry",
@@ -391,14 +391,14 @@ $(document).ready(function() {
             var mapElement = document.getElementById('map');
             var map = new google.maps.Map(mapElement, mapOptions);
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(40.6700, -73.9400),
+                position: new google.maps.LatLng(50.855545520427604, 4.341250284033105),
                 map: map,
                 title: 'Snazzy!'
             });
         }
     }
 
-    //------- Mailchimp js --------//  
+    //------- Mailchimp js --------//
 
     $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();
