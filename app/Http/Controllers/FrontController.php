@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Offre;
+use App\Models\Projet;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -30,7 +31,8 @@ class FrontController extends Controller
     }
     public function projects()
     {
-        return view("pages.projects");
+        $projetTout = Projet::all();
+        return view("pages.projects",compact("projetTout"));
     }
     public function services()
     {
