@@ -15,9 +15,14 @@ class FrontController extends Controller
     public function Home()
     {
         $offreTout = Offre::all();
+        // $projetTout = Projet::all();
+        $projetTout = Projet::inRandomOrder()->take(6)->get();
+        $serviceTout = Service::all();
+
+
         // $projetTout = Projet::find($id);
         // return view("home",compact("projetTout"));
-        return view("home",compact("offreTout"));
+        return view("home",compact("offreTout","projetTout","serviceTout"));
     }
     public function contact()
     {

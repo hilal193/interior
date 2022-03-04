@@ -37,7 +37,7 @@
                         <a href="#" target="_blank">
                             <div class="content-overlay"></div>
                             {{-- <img class="content-image img-fluid d-block mx-auto" src={{ "img/g1.jpg" }} alt=""> --}}
-                            <img class="content-image img-fluid d-block mx-auto" src={{ asset('img/'. $item->url) }} alt="">
+                            <img class="content-image img-fluid d-block mx-auto img-responsive" src={{ asset('img/'. $item->url) }} alt="">
                             <div class="content-details fadeIn-bottom">
                                 {{-- <h3 class="content-title mx-auto">Lavendar ambient interior</h3> --}}
                                 <h3 class="content-title mx-auto">{{ $item->titre }}</h3>
@@ -56,7 +56,7 @@
                         <a href="#" target="_blank">
                             <div class="content-overlay"></div>
                             {{-- <img class="content-image img-fluid d-block mx-auto" src="img/g2.jpg" alt=""> --}}
-                            <img class="content-image img-fluid d-block mx-auto" src={{ asset('img/'. $item->url) }}  alt="">
+                            <img class="content-image img-fluid d-block mx-auto img-responsive" src={{ asset('img/'. $item->url) }}  alt="">
                             <div class="content-details fadeIn-bottom">
                                 {{-- <h3 class="content-title mx-auto">Ambient interior</h3> --}}
                                 <h3 class="content-title mx-auto">{{ $item->titre }}</h3>

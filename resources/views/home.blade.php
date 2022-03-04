@@ -70,35 +70,42 @@
             </div>
         </div>
         <div class="row">
+            {{-- @foreach ($projetTout->shuffle()->take(6) as $item) --}}
+            @foreach ($projetTout as $item)
+            @if ($loop->index % 4 == 0 || $loop->index % 4 == 3)
             <div class="col-lg-8">
                 <div class="single-gallery">
                     <div class="content">
                         <a href="#" target="_blank">
                           <div class="content-overlay"></div>
-                               <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g1.jpg") }} alt="">
+                               <img class="content-image img-fluid d-block mx-auto img-responsive" src={{ asset('img/'. $item->url) }} alt="">
                           <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                            {{-- <a href={{ route("projectDetails",$projetTout->id) }} class="primary-btn text-uppercase mt-20">More Details</a> --}}
+                            <h3 class="content-title mx-auto">{{ $item->titre }}</h3>
                           </div>
                         </a>
                     </div>
                 </div>
             </div>
+
+            @else
             <div class="col-lg-4">
                 <div class="single-gallery">
                     <div class="content">
                         <a href="#" target="_blank">
-                          <div class="content-overlay"></div>
-                               <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g2.jpg") }} alt="">
+                            <div class="content-overlay"></div>
+                               <img class="content-image img-fluid d-block mx-auto img-responsive" src={{ asset('img/'. $item->url) }} alt="">
                           <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title mx-auto">Ambient interior</h3>
-                            {{-- <a href={{ route("projectDetails",$projetTout->id) }} class="primary-btn text-uppercase mt-20">More Details</a> --}}
-                          </div>
+                            <h3 class="content-title mx-auto">{{ $item->titre }}</h3>
+                        </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+
+            @endif
+            @endforeach
+
+            {{-- <div class="col-lg-4">
                 <div class="single-gallery">
                     <div class="content">
                         <a href="#" target="_blank">
@@ -106,7 +113,6 @@
                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g3.jpg") }} alt="">
                           <div class="content-details fadeIn-bottom">
                             <h3 class="content-title mx-auto">Ambient interior</h3>
-                            {{-- <a href={{ route("projectDetails",$projetTout->id) }} class="primary-btn text-uppercase mt-20">More Details</a> --}}
                           </div>
                         </a>
                     </div>
@@ -120,12 +126,11 @@
                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g4.jpg") }} alt="">
                           <div class="content-details fadeIn-bottom">
                             <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                            {{-- <a href={{ route("projectDetails",$projetTout->id) }} class="primary-btn text-uppercase mt-20">More Details</a> --}}
                           </div>
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -140,18 +145,23 @@
             </div>
         </div>
         <div class="row">
+            @foreach ($serviceTout->shuffle() as $item)
+
             <div class="col-lg-4 col-md-6">
                 <div class="single-feature">
                     <a href="#" class="title d-flex flex-row align-items-center">
                         <span class="lnr lnr-user"></span>
-                        <h4>Expert Technicians</h4>
+                        <h4>{{ $item->titre }}</h4>
                     </a>
                     <p>
-                        Computer users and programmers have become so accustomed to using Windows, even for the changing.
+                       {{$item->description}}
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            @endforeach
+
+
+            {{-- <div class="col-lg-4 col-md-6">
                 <div class="single-feature">
                     <a href="#" class="title d-flex flex-row align-items-center">
                         <span class="lnr lnr-license"></span>
@@ -205,7 +215,7 @@
                         So you have your new digital camera and clicking away to glory anything and everything in sight. Now you want.
                     </p>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </div>
