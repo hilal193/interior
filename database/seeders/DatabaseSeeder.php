@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
             ProjetSeeder::class,
             ProjetShowSeeder::class,
             ContactSeeder::class,
+            CategorieSeeder::class,
+            ArticleSeeder::class,
         ]);
     }
 }

@@ -75,7 +75,7 @@
                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g1.jpg") }} alt="">
                           <div class="content-details fadeIn-bottom">
                             <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                            <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More Details</a>
+                            {{-- <a href={{ route("projectDetails",$projetTout->id) }} class="primary-btn text-uppercase mt-20">More Details</a> --}}
                           </div>
                         </a>
                     </div>
@@ -89,7 +89,7 @@
                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g2.jpg") }} alt="">
                           <div class="content-details fadeIn-bottom">
                             <h3 class="content-title mx-auto">Ambient interior</h3>
-                            <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More Details</a>
+                            {{-- <a href={{ route("projectDetails",$projetTout->id) }} class="primary-btn text-uppercase mt-20">More Details</a> --}}
                           </div>
                         </a>
                     </div>
@@ -103,7 +103,7 @@
                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g3.jpg") }} alt="">
                           <div class="content-details fadeIn-bottom">
                             <h3 class="content-title mx-auto">Ambient interior</h3>
-                            <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More Details</a>
+                            {{-- <a href={{ route("projectDetails",$projetTout->id) }} class="primary-btn text-uppercase mt-20">More Details</a> --}}
                           </div>
                         </a>
                     </div>
@@ -117,7 +117,7 @@
                                <img class="content-image img-fluid d-block mx-auto" src={{ asset("img/g4.jpg") }} alt="">
                           <div class="content-details fadeIn-bottom">
                             <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                            <a href={{ route("projectDetails") }} class="primary-btn text-uppercase mt-20">More Details</a>
+                            {{-- <a href={{ route("projectDetails",$projetTout->id) }} class="primary-btn text-uppercase mt-20">More Details</a> --}}
                           </div>
                         </a>
                     </div>

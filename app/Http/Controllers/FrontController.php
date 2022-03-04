@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Offre;
 use App\Models\Projet;
 use App\Models\Contact;
@@ -12,6 +13,8 @@ class FrontController extends Controller
 {
     public function Home()
     {
+        // $projetTout = Projet::find($id);
+        // return view("home",compact("projetTout"));
         return view("home");
     }
     public function contact()
@@ -21,7 +24,9 @@ class FrontController extends Controller
     }
     public function blogHome()
     {
-       return view("pages.bloghome");
+        $articleTout = Article::all();
+        // dd($articleTout);
+       return view("pages.bloghome", compact("articleTout"));
     }
     public function elements()
     {

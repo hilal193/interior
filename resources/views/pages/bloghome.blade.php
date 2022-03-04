@@ -85,18 +85,20 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto posts-list">
+                {{-- @dd($articleTout->titre) --}}
+                @foreach ($articleTout as $item)
                 <div class="single-post row">
                     <div class="col-lg-3  col-md-3 meta-details">
                         <ul class="tags">
-                            <li><a href="#">Food,</a></li>
-                            <li><a href="#">Technology,</a></li>
+                            <li><a href="#">{{ $item->tags }}</a></li>
+                            {{-- <li><a href="#">Technology,</a></li>
                             <li><a href="#">Politics,</a></li>
-                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Lifestyle</a></li> --}}
                         </ul>
                         <div class="user-details row">
-                            <p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span
+                            <p class="user-name col-lg-12 col-md-12 col-6"><a href="#">{{ $item->auteur }}</a> <span
                                     class="lnr lnr-user"></span></p>
-                            <p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Dec, 2017</a> <span
+                            <p class="date col-lg-12 col-md-12 col-6"><a href="#">{{ $item->creation }}</a> <span
                                     class="lnr lnr-calendar-full"></span></p>
                             <p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span
                                     class="lnr lnr-eye"></span></p>
@@ -106,20 +108,23 @@
                     </div>
                     <div class="col-lg-9 col-md-9 ">
                         <div class="feature-img">
-                            <img class="img-fluid" src={{ asset("img/blog/feature-img1.jpg") }} alt="">
+                            {{-- <img class="img-fluid" src={{ asset("img/blog/feature-img1.jpg") }} alt=""> --}}
+                            <img class="img-fluid" src={{ asset('img/'. $item->url) }} alt="">
                         </div>
                         <a class="posts-title" href="blog-single.html">
-                            <h3>Astronomy Binoculars A Great Alternative</h3>
+                            <h3>{{ $item->titre }}</h3>
                         </a>
                         <p class="excert">
-                            MCSE boot camps have its supporters and its detractors. Some people do not understand
-                            why you should have to spend money on boot camp when you can get the MCSE study
-                            materials yourself at a fraction.
+                           {{$item->description}}
                         </p>
                         <a href="#" class="primary-btn">View More</a>
                     </div>
                 </div>
-                <div class="single-post row">
+
+                @endforeach
+
+
+                {{-- <div class="single-post row">
                     <div class="col-lg-3  col-md-3 meta-details">
                         <ul class="tags">
                             <li><a href="#">Food,</a></li>
@@ -250,7 +255,8 @@
                         </p>
                         <a href="#" class="primary-btn">View More</a>
                     </div>
-                </div>
+                </div> --}}
+                @if (count($articleTout) > 5)
                 <nav class="blog-pagination justify-content-center d-flex">
                     <ul class="pagination">
                         <li class="page-item">
@@ -274,6 +280,8 @@
                         </li>
                     </ul>
                 </nav>
+
+                @endif
             </div>
 
         </div>
