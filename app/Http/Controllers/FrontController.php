@@ -14,9 +14,10 @@ class FrontController extends Controller
 {
     public function Home()
     {
+        $offreTout = Offre::all();
         // $projetTout = Projet::find($id);
         // return view("home",compact("projetTout"));
-        return view("home");
+        return view("home",compact("offreTout"));
     }
     public function contact()
     {

@@ -29,15 +29,18 @@
             </div>
         </div>
         <div class="row">
+            @foreach ($offreTout->shuffle()->take(3) as $item)
             <div class="col-lg-4">
                 <div class="single-service">
-                    <a href="#"><h4>Interior Design</h4></a>
+                    <a href="#"><h4>{{ $item->titre }}</h4></a>
                     <p>
-                        Sony laptops are among the most well known laptops on today’s market. Sony is a name that over time has established itself as creating a solid product.
+                        {{ $item->description }}
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4">
+
+            @endforeach
+            {{-- <div class="col-lg-4">
                 <div class="single-service">
                     <a href="#"><h4>Architecture Design</h4></a>
                     <p>
@@ -52,7 +55,7 @@
                         Can you imagine what we will be downloading in another twenty years? I mean who would have ever thought that you could record sound.
                     </p>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
