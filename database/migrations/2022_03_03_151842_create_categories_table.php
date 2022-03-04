@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string("nom");
             $table->string("mini_description");
+            $table->string('imageUrl');
             // $table->string("titre");
             // $table->longText("description");
             // $table->string("auteur");

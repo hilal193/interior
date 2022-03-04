@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Categorie;
 use App\Models\Offre;
 use App\Models\Projet;
 use App\Models\Contact;
@@ -25,8 +26,9 @@ class FrontController extends Controller
     public function blogHome()
     {
         $articleTout = Article::all();
+        $categorieTout = Categorie::all();
         // dd($articleTout);
-       return view("pages.bloghome", compact("articleTout"));
+       return view("pages.bloghome", compact("articleTout","categorieTout"));
     }
     public function elements()
     {
