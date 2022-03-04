@@ -41,6 +41,13 @@ class FrontController extends Controller
         // dd($projetTout);
         return view("pages.projectdetails",compact("projetTout"));
     }
+    public function blogDetails($id)
+    {
+
+        $articleTout = Article::find($id);
+        // dd($projetTout);
+        return view("pages.blogdetails",compact("articleTout"));
+    }
     public function projects()
     {
         $projetTout = Projet::all();

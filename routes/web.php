@@ -55,6 +55,7 @@ Route::get('/pages/BlogHome', [FrontController::class,"blogHome"])->name('blogHo
 Route::get('/pages/Contact', [FrontController::class,"contact"])->name('contact');
 Route::get('/pages/Elements', [FrontController::class,"elements"])->name('elements');
 Route::get('/pages/{id}/ProjectDetails', [FrontController::class,"projetDetails"])->name('projectDetails');
+Route::get('/pages/{id}/BlogDetails', [FrontController::class,"blogDetails"])->name('blogDetails');
 Route::get('/pages/Projects', [FrontController::class,"projects"])->name('projects');
 Route::get('/pages/Services', [FrontController::class,"services"])->name('services');
 

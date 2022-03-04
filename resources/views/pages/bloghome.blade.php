@@ -96,7 +96,10 @@
                 <div class="single-post row">
                     <div class="col-lg-3  col-md-3 meta-details">
                         <ul class="tags">
-                            <li><a href="#">{{ $item->tags }}</a></li>
+                            {{-- <li><a href="#">{{ $item->tags }}yo</a></li> --}}
+                            <li><a href="#">yo</a>,</li>
+                            <li><a href="#">test {{ $item->categorie_id}}</a></li>
+
                             {{-- <li><a href="#">Technology,</a></li>
                             <li><a href="#">Politics,</a></li>
                             <li><a href="#">Lifestyle</a></li> --}}
@@ -123,7 +126,7 @@
                         <p class="excert">
                            {{$item->description}}
                         </p>
-                        <a href="#" class="primary-btn">View More</a>
+                        <a href={{ route("blogDetails",$item->id) }} class="primary-btn">View More</a>
                     </div>
                 </div>
 
