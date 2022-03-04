@@ -13,7 +13,7 @@
                     Precise concept design <br>
                     for stylish living
                 </h1>
-                <a href="#" class="primary-btn header-btn text-uppercase mt-10">Get Started</a>
+                <a href={{ route("services") }} class="primary-btn header-btn text-uppercase mt-10">Get Started</a>
             </div>
         </div>
     </div>

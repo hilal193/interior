@@ -97,6 +97,10 @@
                     <div class="col-lg-3  col-md-3 meta-details">
                         <ul class="tags">
                             {{-- <li><a href="#">{{ $item->tags }}yo</a></li> --}}
+                            @foreach ($item->tags as $tag)
+
+                            <li><a href="#">{{$tag->nom }}</a>,</li>
+                            @endforeach
                             <li><a href="#">yo</a>,</li>
                             <li><a href="#">test {{ $item->categorie_id}}</a></li>
 

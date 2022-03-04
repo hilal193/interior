@@ -28,7 +28,7 @@
             </div>
             <div class="row">
                 @forelse ($offreTout as $item)
-                <div class="col-lg-4">
+                <div class="col-lg-4  p-2">
                     <div class="single-service">
                         <a href="#">
                             <h4>{{ $item->titre }}</h4>

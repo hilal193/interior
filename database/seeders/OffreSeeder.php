@@ -33,6 +33,24 @@ class OffreSeeder extends Seeder
                 over time has established itself as creating a solid product.",
                 "created_at"=>now(),
             ],
+            [
+                "titre"=>"Concept Design",
+                "description"=>" Sony laptops are among the most well known laptops on today’s market. Sony is a name that
+                over time has established itself as creating a solid product.",
+                "created_at"=>now(),
+            ],
+            [
+                "titre"=>"Architecture Design",
+                "description"=>" Sony laptops are among the most well known laptops on today’s market. Sony is a name that
+                over time has established itself as creating a solid product.",
+                "created_at"=>now(),
+            ],
+            [
+                "titre"=>"Interior Design",
+                "description"=>" Sony laptops are among the most well known laptops on today’s market. Sony is a name that
+                over time has established itself as creating a solid product.",
+                "created_at"=>now(),
+            ],
         ]);
     }
 }

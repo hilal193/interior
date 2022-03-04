@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             ContactSeeder::class,
             CategorieSeeder::class,
             ArticleSeeder::class,
+            TagSeeder::class,
         ]);
     }
 }
