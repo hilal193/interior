@@ -15,14 +15,23 @@ class FrontController extends Controller
     public function Home()
     {
         $offreTout = Offre::all();
-        // $projetTout = Projet::all();
-        $projetTout = Projet::inRandomOrder()->take(6)->get();
+        if (count(Projet::all()) < 6) {
+           $projetTout = Projet::all();
+        }else {
+
+            $projetTout = Projet::take(6)->get();
+        }
+        // $projetTout = Projet::inRandomOrder()->take(6)->get();
         $serviceTout = Service::all();
+        // $articleTout = Article::all();
+        $articleTout = Article::latest()->take(6)->get();
+        // Article::orderBy("created_at","desc")->paginate(2);
+        $categorieTout = Categorie::all();
 
 
         // $projetTout = Projet::find($id);
         // return view("home",compact("projetTout"));
-        return view("home",compact("offreTout","projetTout","serviceTout"));
+        return view("home",compact("offreTout","projetTout","serviceTout","articleTout","categorieTout"));
     }
     public function contact()
     {
